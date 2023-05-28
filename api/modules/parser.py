@@ -53,7 +53,7 @@ class AsyncMusicStatistic:
         share_count = 0
 
         dict_prop = {}
-        with open('raw-x-tt-params.json', 'r') as file:
+        with open('api/raw-x-tt-params.json', 'r') as file:
             dict_prop = json.loads(file.read())
         
         os.system("cls")
@@ -103,4 +103,4 @@ class AsyncMusicStatistic:
 
     def __save_result(self):
         self.sorted_df = self.stat_df["playCount"].sort_values(ascending=False).reset_index()
-        self.sorted_df.to_csv(f"data/{self.music_id}.csv")
+        self.sorted_df.to_csv(f"api/data/{self.music_id}.csv")

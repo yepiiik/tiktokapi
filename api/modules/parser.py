@@ -56,7 +56,7 @@ class AsyncMusicStatistic:
         with open('api/raw-x-tt-params.json', 'r') as file:
             dict_prop = json.loads(file.read())
         
-        os.system("cls")
+        print("\n")
         print(f"Statistic for music: {self.music_id}")
         print("Making request, please wait (it maybe about 15-60 seconds depends on Internet speed)")
 

@@ -6,7 +6,7 @@ function App() {
 
   function analyze() {
     let xhr = new XMLHttpRequest();
-    xhr.open('get', 'http://127.0.0.1:80/api/music_statistic/' + musicIdValue);
+    xhr.open('get', 'http://192.168.0.175:80/api/music_statistic/' + musicIdValue);
     xhr.send();
     setViews("Please wait")
     xhr.onload = function() {
